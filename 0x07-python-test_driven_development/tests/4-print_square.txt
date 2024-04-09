@@ -1,0 +1,39 @@
+===================================
+How to use 4-print_square.py
+===================================
+
+The module defines a function `print_square(size)`
+
+The function prints out a square of dimentions size
+
+=======================================
+
+>>> print_square = __import__('4-print_square').print_square
+
+::
+
+Test case 1 (integer value):
+
+	>>> print_square(3)
+	###
+	###
+	###
+
+Test case 2 (value less than 0):
+	::
+
+	>>> print_square(-3)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+	:: (float)
+
+	>>> print_square(-3.2)
+	Traceback (most recent call last):
+	TypeError: size must be an integer
+
+Test case 3 (non integer):
+
+	>>> print_square(none)
+	Traceback (most recent call last):
+        TypeError: size must be an integer

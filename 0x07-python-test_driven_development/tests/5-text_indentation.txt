@@ -1,0 +1,30 @@
+================================
+How it works
+
+================================
+
+The module defines a fuction `text_indentation(text)`
+
+the funciton takes in a string of words and indents it removing  ., ? and :
+
+===================================
+
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Test case 1 (string):
+        >>> text_indentation("my day was fine")
+        my day was fine
+        <BLANKLINE>
+        <BLANKLINE>
+
+Test case 2 (string beginning with whitespace):
+        >>> text_indentation(" day was fine")
+        day was fine
+        <BLANKLINE>
+        <BLANKLINE>
+
+Test case 3 (has . ? :):
+        >>> text_indentation(" day was fine? yes: it was.")
+        day was fine yes it was
+        <BLANKLINE>
+        <BLANKLINE>
