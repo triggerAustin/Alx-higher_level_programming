@@ -69,13 +69,8 @@ class Rectangle:
          str_ = ""
         if self.__width == 0 or self.__height == 0:
             return ""
-        for i in range(self.__height):
-            if i < (self.__height - 1):
-                str_ += ("#" * self.__width) + "\n"
-            else:
-                str_ += ("#" * self.__width)
-        return str_
-
+        return ("\n".join(["".join(["#" for i in range(self.__width)])
+                for j in range(self.__height)]))
     def __repr__(self):
         """returns a string representation of the class object"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
