@@ -5,7 +5,7 @@ defines a class rectangle
 
 
 class Rectangle:
-    """ 
+    """
         Class of rectangle
 
         Attributes:
