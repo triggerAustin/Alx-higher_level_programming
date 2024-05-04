@@ -71,6 +71,6 @@ class Rectangle:
         return ("\n".join(["".join(["#" for i in range(self.__width)])
                 for j in range(self.__height)]))
 
-    def __repr__(self):
-        """return a string representation of the object"""
-        return ("Rectangle({:d}, {:d})".format(self.__width, self.__height)
+    def repr():
+        """returns a string representation of the class object"""
+        return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
