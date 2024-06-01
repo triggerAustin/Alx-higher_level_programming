@@ -2,17 +2,17 @@
 This project focuses on building the infrastructure of a website. The primary focus is functionality and security. It delves into servers and their roles, the route taken when accessing a website by it's link and the idea of securing the website behind firewalls.
 
 ## Definition of terms
-. SERVER:
+1. SERVER:
 A physical or virtual machine that has the web application files or database files.
 A common one is NGINX server, which serves relevant files based on query from the users browser.
-. DNS RESOLUTION:
+2. DNS RESOLUTION:
 when user sends request to DNS server to resolve a domain name (i.e: www.google.com)
 the dns server returns to the browser the ip address associated with that domain name.
-. DOMAIN NAME:
+3. DOMAIN NAME:
 human readeable address used to access websites on the internet
-. LOAD BALANCER:
+4. LOAD BALANCER:
 Distributes incoming traffic between the servers
-. FIREWALL:
+5. FIREWALL:
 ENhances security by controling traffic between various parts of the infrastructure
 
 # 0-simple_web_stack
