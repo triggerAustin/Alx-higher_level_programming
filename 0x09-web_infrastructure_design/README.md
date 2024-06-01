@@ -2,17 +2,17 @@
 This project focuses on building the infrastructure of a website. The primary focus is functionality and security. It delves into servers and their roles, the route taken when accessing a website by it's link and the idea of securing the website behind firewalls.
 
 ## Definition of terms
-> SERVER:
+. SERVER:
 A physical or virtual machine that has the web application files or database files.
 A common one is NGINX server, which serves relevant files based on query from the users browser.
-> DNS RESOLUTION:
+. DNS RESOLUTION:
 when user sends request to DNS server to resolve a domain name (i.e: www.google.com)
 the dns server returns to the browser the ip address associated with that domain name.
-> DOMAIN NAME:
+. DOMAIN NAME:
 human readeable address used to access websites on the internet
-> LOAD BALANCER:
+. LOAD BALANCER:
 Distributes incoming traffic between the servers
-> FIREWALL:
+. FIREWALL:
 ENhances security by controling traffic between various parts of the infrastructure
 
 # 0-simple_web_stack
@@ -44,5 +44,6 @@ Extra servers are just webservers with the same structure, an application server
 WORK FLOW
 Aside from the inclusion of a load balancer to distribute the traffic, for security, a series of firewalls are strategically placed through out the architecture to ensure the system remains secure.
 In the architecture below, there are 3 firewalls. One before accessing the load balancer, another before accessing the webservers and another right before accessing the database server.
+There is also a monitering client to keep a log of the system to capture any errors and keep track of the systems health
 ![example_image](images/2-secured_and_monitored_web_infrastructure)
 
