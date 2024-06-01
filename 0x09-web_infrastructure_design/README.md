@@ -34,7 +34,7 @@ WORK FLOW
 
 # 1-distributed_web_infrastructure
 WORK FLOW
-[Largely similar to the first one, only there is inclusion of a load balancer and servers are multiple]
+- [Largely similar to the first one, only there is inclusion of a load balancer and servers are multiple]
 the load balancer is introduced right before reaching the servers.
 This ensures USER requests are distributed through the available servers(however many there are) as per a predefined algorithim, (i.e Round-Robin)
 Extra servers are just webservers with the same structure, an application server and myswl database server
@@ -42,8 +42,23 @@ Extra servers are just webservers with the same structure, an application server
 
 # 2-secured_and_monitored_web_infrastructure
 WORK FLOW
-Aside from the inclusion of a load balancer to distribute the traffic, for security, a series of firewalls are strategically placed through out the architecture to ensure the system remains secure.
+- Aside from the inclusion of a load balancer to distribute the traffic, for security, a series of firewalls are strategically placed through out the architecture to ensure the system remains secure.
 In the architecture below, there are 3 firewalls. One before accessing the load balancer, another before accessing the webservers and another right before accessing the database server.
 There is also a monitering client to keep a log of the system to capture any errors and keep track of the systems health
 ![example_image](images/2-secured_and_monitored_web_infrastructure)
 
+## the images were drawn on draw.io
+## Authors
+
+This project is maintained by Emmanuel Odenyire Anyira and Austin Muthoni, both being students at ALX Africa, taking the ALX Software Engineering Program. Contributions to the project are welcomed via pull requests on GitHub.
+
+For collaborations or inquiries;
+please contact Emmanuel Odenyire Anyira via:
+
+- Email: eodenyire@gmail.com
+- LinkedIn: Emmanuel Odenyire Anyira
+
+You can contact Austin through:
+
+- LinkedIn: Austin Ng'ang'a
+- Email: trigger_austin00@proton.me
