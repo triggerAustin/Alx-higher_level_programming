@@ -14,4 +14,4 @@ def lookup(obj):
         list of attr or methods
     """
 
-    return dir(obj)
+    return (dir(obj))
