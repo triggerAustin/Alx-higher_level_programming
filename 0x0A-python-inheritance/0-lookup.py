@@ -1,7 +1,9 @@
 #!/usr/bin/python3
+
 """
 This module contains a method to look up methods and attr of an object
 """
+
 
 def lookup(obj):
     """
