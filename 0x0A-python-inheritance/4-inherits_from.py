@@ -5,7 +5,6 @@ This module contains a fn inherits_from
 """
 
 
-
 def inherits_from(obj, a_class):
     """
     check if obj is instance of subclass of a class
