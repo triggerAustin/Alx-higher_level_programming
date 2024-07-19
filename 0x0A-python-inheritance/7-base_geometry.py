@@ -9,9 +9,15 @@ class BaseGeometry:
         a class BaseGeometry
     """
     def __init__(self):
+        """
+            constructor
+        """
         pass
 
     def area(self):
+        """
+            Raises exception
+        """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
