@@ -4,4 +4,4 @@ if(!Number.isInteger(parseFloat(args[2]))){
 	console.log("Not a number");
 	return;
 }
-console.log(parseInt(args[2]));
+console.log('My number: ' + parseInt(args[2]));
