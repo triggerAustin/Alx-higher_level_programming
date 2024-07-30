@@ -1,5 +1,8 @@
 #!/usr/bin/node
-
+/*
+ reads a file
+ outputs it's content / errors
+ */
 const fs = require('fs');
 const filePath = process.argv.slice(2)[0]
 
