@@ -9,3 +9,23 @@ def find_peak(list_of_integers):
         list_of_integers(int): list of integers to find peak of
     Returns: peak of list_of_integers or None
     """
+
+    size = len(list_of_integers)
+
+    if size == 0:
+        return None
+ 
+    arr = list_of_integers
+    mid_idx = size // 2
+
+    while True:
+        left = mid_idx - 1
+        right = mid_idx + 1
+
+        if (arr[mid_idx] > arr[left] and arr[mid_idx] > arr[right]
+                or mid_idx == size - 1 or mid_idx == 0):
+            return arr[mid_idx]
+        if (arr[mid_idx] < arr[left]):
+            mid_idx = left
+        if (arr[mid_idx] < arr[right]):
+            mid_idx = right
