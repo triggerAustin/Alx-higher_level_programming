@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # check if url is passed as arg
 if [ -z "$1" ]; then
