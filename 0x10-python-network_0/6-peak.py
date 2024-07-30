@@ -21,8 +21,6 @@ def find_peak(list_of_integers):
     while True:
         left = mid_idx - 1 if mid_idx > 0 else 0
         right = mid_idx + 1 if mid_idx < size - 1 else size - 1
-        
-        print(size, left, mid_idx,  right)
 
         if (arr[mid_idx] > arr[left] and arr[mid_idx] > arr[right]
                 or mid_idx == size - 1 or mid_idx == 0):
