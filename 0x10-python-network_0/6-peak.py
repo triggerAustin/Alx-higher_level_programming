@@ -6,8 +6,6 @@
 
 def find_peak(list_of_integers):
     """
-        find the peal in an array using binary search
-        time complexity O(log n)
         Args:
             list_pf_integers: array
         Return: returns the peak value in arr
