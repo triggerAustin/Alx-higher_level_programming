@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # check if url is passed as arg
 if [ -z "$1" ]; then
 	echo "Usage: $0 <URL>"
