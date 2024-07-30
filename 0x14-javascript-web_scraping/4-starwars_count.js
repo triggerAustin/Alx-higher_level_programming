@@ -10,27 +10,27 @@ use the module request
 const args = process.argv.slice(2);
 const request = require('request');
 const url = args[0];
-const character_id = 18;
-const characters = []
+const characterId = 18;
+const characters = [];
 
-request(url, {json : true},  function(error, response, body){
-	if (error){
-		console.log(error);
-	}
+request(url, { json: true }, function (error, response, body) {
+  if (error) {
+    console.log(error);
+  }
 
-	let count = 0;
-	let i;
+  let count = 0;
+  let i;
 
-	for (i = 0; i < body.results.length; i++){
-		characters.push(body.results[i].characters);
-	}
+  for (i = 0; i < body.results.length; i++) {
+    characters.push(body.results[i].characters);
+  }
 
-	characters.forEach(chr => {
-		chr.forEach(ch => {
-			if(String(ch).endsWith(`${character_id}/`)){
-				count++;
-			}
-		});
-	});
-console.log(count);
+  characters.forEach(chr => {
+    chr.forEach(ch => {
+      if (String(ch).endsWith(`${characterId}/`)) {
+        count++;
+      }
+    });
+  });
+  console.log(count);
 });

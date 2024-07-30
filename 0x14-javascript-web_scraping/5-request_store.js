@@ -13,12 +13,12 @@ const fs = require('fs');
 const url = args[0];
 const filename = args[1];
 
-request(url, { json : true }, (error, response, body) => {
-	if (!error){
-		fs.writeFile(filename, body, 'utf8', (error) => {
-			if (error){
-				console.log(error);
-			}
-		});
-	}
+request(url, { json: true }, (error, response, body) => {
+  if (!error) {
+    fs.writeFile(filename, body, 'utf8', (error) => {
+      if (error) {
+        console.log(error);
+      }
+    });
+  }
 });
