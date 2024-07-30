@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-
-
+"""
+Function find_peak(list_of_integers) to find peak in arr of int
+"""
 def find_peak(list_of_integers):
     """
         Args:
