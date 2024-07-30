@@ -6,4 +6,10 @@
  must use the module request
  */
 const args = process.argv.slice(2);
-const 
+const request = require('request') ;
+
+request(args[0], functoin(error, response, body){
+	if (response && !error){
+		console.log("code:", response.statusCode);
+	}
+});
