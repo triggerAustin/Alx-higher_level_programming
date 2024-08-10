@@ -15,8 +15,8 @@ def fetch_res_email(url):
         Return:
             none
     """
-    payload = {'email':sys.argv[2]}
-    res = requests.post(url, params=payload)
+    payload = {'email': sys.argv[2]}
+    res = requests.post(url, data=payload)
     print(res.text)
 
 
