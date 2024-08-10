@@ -16,7 +16,7 @@ def fetch_res_email(url):
             none
     """
     email = sys.argv[2]
-    res = request.get(url, params=email)
+    res = requests.get(url, params=email)
     print(res.text)
 
 
