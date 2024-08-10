@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-fetches https://alx-intranet.hbtn.io/status
+This script fetches https://alx-intranet.hbtn.io/status using
+the requests package and displays the body of the response in
+a specified format.
 """
 if __main__ == "__main__":
     import requests
