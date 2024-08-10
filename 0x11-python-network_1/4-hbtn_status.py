@@ -4,7 +4,9 @@
     the requests package and displays the body of the response in
     a specified format.
 """
+
 import requests
+
 
 def fetch_res(url):
     """
@@ -21,6 +23,7 @@ def fetch_res(url):
         print("\t- content:", res_txt)
     except requests.RequestException as e:
         print(f"Error fetching url: {e}")
+
 
 if __main__ == "__main__":
     url = 'https://alx-intranet.hbtn.io/status'
