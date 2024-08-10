@@ -18,7 +18,7 @@ def send_req(url):
     """
     req = requests.get(url)
     if req.status_code > 400:
-        print("Error code:", r.status_code)
+        print("Error code:", req.status_code)
     else:
         print(req.text)
 
