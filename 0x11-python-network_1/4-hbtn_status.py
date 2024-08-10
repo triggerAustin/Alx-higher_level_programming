@@ -1,33 +1,33 @@
 #!/usr/bin/python3
 """
-This script fetches https://alx-intranet.hbtn.io/status using
-the requests package and displays the body of the response in
-a specified format.
+    This script fetches https://alx-intranet.hbtn.io/status using
+    the requests package and displays the body of the response in
+    a specified format.
 """
 
 import requests
 
 
-def fetch_status(url):
+def fetch_res(url):
     """
-    Fetches the content from the specified URL and prints the response body.
+        fetches https://alx-intranet.hbtn.io/status
 
-    Args:
-        url (str): The URL to fetch the content from.
+        Args:
+            url: to make request to
 
-    Returns:
-        None
+        Returns:
+            None
     """
     try:
-        response = requests.get(url)
-        response_text = response.text
+        res = requests.get(url)
+        res_txt = res.text
         print("Body response:")
-        print("\t- type:", type(response_text))
-        print("\t- content:", response_text)
+        print("\t- type:", type(res_txt))
+        print("\t- content:", res_txt)
     except requests.RequestException as e:
-        print(f"Error fetching URL: {e}")
+        print(f"Error fetching url: {e}")
 
 
-if __name__ == "__main__":
+if __main__ == "__main__":
     url = 'https://alx-intranet.hbtn.io/status'
-    fetch_status(url)
+    fetch_res(url)
