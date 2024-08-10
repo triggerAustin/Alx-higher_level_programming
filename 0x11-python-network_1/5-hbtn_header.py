@@ -8,7 +8,7 @@ import sys
 import requests
 
 
-def fetch_req_Id(url):
+def fetch_req_id(url):
     """
         displays the x-request-Id of response
 
