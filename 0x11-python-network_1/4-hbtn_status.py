@@ -14,6 +14,9 @@ def fetch_res(url):
 
         Args:
             url: to make request to
+
+        Returns:
+            None
     """
     try:
         res = requests.get(url)
