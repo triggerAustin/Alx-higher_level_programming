@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+sends request to url with email as parameter
 """
 
 import sys
@@ -7,6 +8,12 @@ import requests
 
 def fetch_res_email(url):
     """
+        makes request to the url
+
+        Args:
+            url: url to make request to
+        Return:
+            none
     """
     email = sys.argv[2]
     res = request.get(url, params=email)
